@@ -7,7 +7,9 @@
 @import "./css/map.css";
 @import "./css/language.css";
 
-
+/* *{
+    border: 1px solid red;
+} */
 
 .jumbotron{
 border: 1px solid black;
@@ -27,7 +29,7 @@ div.container-fluid{
 nav{
     width: 100%;
     background-color: rgba(0,0,0,0.9);
-    overflow: auto;
+    overflow: none;
 }
 
 /*------- NAV ICON HOME */
@@ -220,6 +222,16 @@ nav{
     opacity: 100%;
 }
 
+footer{
+    max-width: 100%;
+
+}
+
+footer ul{
+    max-width: 100%;
+    padding: 0;
+}
+
 @media (max-width: 600px) {
     #skills-nav{
         align-items: center !important;
@@ -237,3 +249,65 @@ nav{
     }
     
 }
+
+/* BOTON SEND */
+/* From uiverse.io by @satyamchaudharydev */
+#send {
+    --primary-color: #645bff;
+    --secondary-color: #fff;
+    --hover-color: #111;
+    --arrow-width: 10px;
+    --arrow-stroke: 2px;
+    box-sizing: border-box;
+    border: 0;
+    border-radius: 20px;
+    color: var(--secondary-color);
+    padding: 1em 1.8em;
+    background: var(--primary-color);
+    display: flex;
+    transition: 0.2s background;
+    align-items: center;
+    gap: 0.6em;
+    font-weight: bold;
+  }
+  
+  .arrow-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .arrow {
+    margin-top: 1px;
+    width: var(--arrow-width);
+    background: var(--primary-color);
+    height: var(--arrow-stroke);
+    position: relative;
+    transition: 0.2s;
+  }
+  
+  button .arrow::before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    border: solid var(--secondary-color);
+    border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+    display: inline-block;
+    top: -3px;
+    right: 3px;
+    transition: 0.2s;
+    padding: 3px;
+    transform: rotate(-45deg);
+  }
+  
+  #send:hover {
+    background-color: var(--hover-color);
+  }
+  
+  #send:hover .arrow {
+    background: var(--secondary-color);
+  }
+  
+  #send:hover .arrow:before {
+    right: 0;
+  }
