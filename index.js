@@ -2,7 +2,7 @@
 window.onload = function(){
   $('#onload').fadeOut();
   $('body').removeClass('hidden nav-display-none');
-  $('nav').removeClass('hidden nav-display-none')
+  $('nav').removeClass('nav-display-none')
 }
 
 // LANGUAGE
@@ -14,7 +14,7 @@ function idioma(){
   let id=check.checked;
   if (id==true){
     location.href="./index-es.html"
-  }else if(id==false){
+  }else {
     location.href="./index.html"
   }
 }
