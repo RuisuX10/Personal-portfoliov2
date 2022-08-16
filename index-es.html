@@ -11,12 +11,17 @@
 
     <title>ERLuis Dev</title>
 </head>
-<body class="bg-dark">
+<body class="bg-dark hidden">
+        <!-- PRELOADER -->
+        <div class="centrado" id="onload">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div>
+        <div class="container">
     <div class="container">
         <!-- HEADER -->
         <header>
             <!-- NAV -->
-            <nav class="navbar fixed-top justify-content-evenly align-items-center flex-nowrap">
+            <nav class="navbar fixed-top justify-content-evenly align-items-center flex-nowrap nav-display-none">
                 <div class="row">
                     <div class="col-sm-3 d-flex container-fluid">
                         <div class="d-flex" id="language-switch">
@@ -183,6 +188,7 @@
             </ul>
         </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </body>
 <script src="./index.js"></script>
 

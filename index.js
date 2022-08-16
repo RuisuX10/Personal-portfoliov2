@@ -1,3 +1,10 @@
+//PRELOADER
+window.onload = function(){
+  $('#onload').fadeOut();
+  $('body').removeClass('hidden nav-display-none');
+  $('nav').removeClass('hidden nav-display-none')
+}
+
 // LANGUAGE
 
 var check=document.querySelector(".check");
